@@ -1,0 +1,74 @@
+body {
+    background-color:white;
+
+
+}
+
+p,div{
+    color:black;
+}
+
+:root{
+    --my-border-color: black;
+}
+
+p.user {
+    border: 1px solid var(--my-border-color);
+    width: fit-content;
+    background-color: rgb(207, 207, 207);
+    padding: 10px;
+    transition: background-color 1s, width 3s, ease;
+
+  }
+
+  p:hover{
+    background-color: red;
+    width: 50%;
+  }
+
+
+  div{
+      width: 400px;
+      border: 15px silver;
+      padding: 0%;
+      margin: 0%;
+  }
+
+h1{
+    color:black;
+
+}
+
+.popup {
+    position: fixed;
+    left: 50%;
+    right: 15%;
+    top: 30vh;
+    background: yellow;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  a{
+    font-family: "Lucida Console", Courier, monospace;
+    font-size:xx-large;
+  }
+
+  [href]{
+      color: red;
+      background: #49ADFF;
+  }
+
+  .navigation {
+    border: 1px solid var(--my-border-color);
+    height: 30px;
+    background: darkblue;
+    font-size: smaller;
+    align-items: center;
+  }
+
+  li :hover {
+      background-color: aqua;
+      font-size: 3em;
+  }
