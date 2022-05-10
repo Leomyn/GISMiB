@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta charset="utf -8">
+<meta charset="UTF-8">
 <meta title="inschtagramm">
 <meta description="Projekt für GIS">
 <meta author="Daniel K.">
 <meta tags="insta,instagram,alternative,besser,mulm"> 
 <title>Inschtagramm</title>
 <link rel="stylesheet" href="stylesheet.css">
+<script src="../scripts.js" defer></script>
 
 </head>
 
@@ -21,11 +21,14 @@
 
     <main>
         <div>
-        
-        <input type="file" id="image_input" accept="image/png,image/jpg">
+        <input type="file" id="image_input" accept="image/png,image/jpg,image/jpeg">
         <div id="display_image"> </div>
-        <script> src="scripts.js" </script>
-        
+        <label> Schreibe noch was dazu: </label>
+        <input type="text" id="description_input">
+        <label> Hochladen </label>
+        <input type="submit" id="upload_input">
+        </div>
+
         <div id="entry">
             <p> UserNr69</p>
             <img
@@ -33,11 +36,12 @@
             alt="beitrag"
             title="hamburgur"
             />
-        </div>
-        <div>
-        <label>Gefällt mir</label><input type="checkbox"/>
-        <label>Schreibe einen Kommentar:</label>
-            <input type="text">
+        <div id="descprition">Description: ein stinknormaler Burger lul </div>
+         <div>
+         <label>Gefällt mir</label><input type="checkbox" id=""/>
+         <label id="comment_input">Schreibe einen Kommentar:</label>
+         <input type="text">
+         </div>
         </div>
 
 
@@ -49,7 +53,7 @@
     <footer>
       Beim Footer muss ich mir was einfallen lassen ^^
     </footer>
-    <script> src="scripts.js" </script>
+    
 </body>
 
 </html>

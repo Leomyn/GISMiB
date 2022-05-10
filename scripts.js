@@ -1,7 +1,9 @@
-/* Javascript code für den Image-Uploader:
+/* eslint-disable camelcase */
 const image_input = document.querySelector("#image_input");
-// eslint-disable-next-line no-var
-var uploaded_image = "";
+let uploaded_image = "";
+const uploadButton = document.getElementById("upload_input");
+const descriptionInput = document.getElementById("descprition_input");
+
 
 image_input.addEventListener("change", function() {
     const reader = new FileReader();
@@ -13,5 +15,7 @@ image_input.addEventListener("change", function() {
     reader.readAsDataURL(this.files[0]);
     console.log(image_input.value);
 });
-*/
 
+upload_input.addEventListener(){
+
+};
