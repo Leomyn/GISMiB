@@ -1,9 +1,9 @@
 /* eslint-disable camelcase */
 const image_input = document.querySelector("#image_input");
 let uploaded_image = "";
-const uploadButton = document.getElementById("upload_input");
-const descriptionInput = document.getElementById("descprition_input");
 
+// eslint-disable-next-line no-unused-vars
+const descriptionInput = document.getElementById("descprition_input");
 
 image_input.addEventListener("change", function() {
     const reader = new FileReader();
@@ -16,6 +16,11 @@ image_input.addEventListener("change", function() {
     console.log(image_input.value);
 });
 
-upload_input.addEventListener(){
+/* upload_input.addEventListener("click",enterEvent);
 
+ function createEntry(){
+    entry = document.createElement("eintrag");
+    let image = uploaded_image.src;
+    const description = descriptionInput.value;
 };
+*/
