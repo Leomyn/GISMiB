@@ -1,5 +1,5 @@
 body{
-  display: flex;
+  
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -20,6 +20,14 @@ body{
   height: fit-content;
   background-color: gray;
   padding: 5%;
+}
+
+.image-element{
+  width: 400px;
+  height: 400px;
+  border: 1px solid black;
+  background-position: center;
+  background-size: cover;
 }
 
 div{

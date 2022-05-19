@@ -1,14 +1,17 @@
 /* eslint-disable camelcase */
 const image_input = document.querySelector("#image_input");
 let uploaded_image = "";
-
 // eslint-disable-next-line no-unused-vars
 const descriptionInput = document.getElementById("descprition_input");
+const upload_input = document.getElementById("upload_input");
+let image = null;
 
 image_input.addEventListener("change", function() {
     const reader = new FileReader();
     reader.addEventListener("load", () => {
         uploaded_image = reader.result;
+        console.log(reader.result);
+        image = `url(${uploaded_image})`;
         document.querySelector("#display_image").style.backgroundImage = `url(${uploaded_image})`;
     });
     // eslint-disable-next-line no-invalid-this
@@ -16,11 +19,14 @@ image_input.addEventListener("change", function() {
     console.log(image_input.value);
 });
 
-/* upload_input.addEventListener("click",enterEvent);
+upload_input.addEventListener("click", function createEntry() {
+    entry = document.createElement("div");
+    entry.style.backgroundImage = image;
+    entry.classList.add("image-element");
+    document.getElementById("entry").appendChild(entry);
+    // desc = document.createElement("p");
+    // desc = document.getElementById("description_input").append;
+    // console.log(desc);
+    return;
+});
 
- function createEntry(){
-    entry = document.createElement("eintrag");
-    let image = uploaded_image.src;
-    const description = descriptionInput.value;
-};
-*/
