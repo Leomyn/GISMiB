@@ -20,13 +20,13 @@ image_input.addEventListener("change", function() {
 });
 
 upload_input.addEventListener("click", function createEntry() {
-    entry = document.createElement("div");
+    entry = document.createElement("img");
+    desc = document.createElement("p");
     entry.style.backgroundImage = image;
     entry.classList.add("image-element");
+    desc.classList.add("entry");
     document.getElementById("entry").appendChild(entry);
-    // desc = document.createElement("p");
-    // desc = document.getElementById("description_input").append;
-    // console.log(desc);
+    desc = document.getElementById("description_input").appendChild(desc);
     return;
 });
 

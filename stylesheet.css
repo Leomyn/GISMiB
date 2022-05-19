@@ -1,8 +1,8 @@
 body{
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 10px;
+  align-items:flex-start;
+  gap: 20px;
   flex-direction: column;
   height: 100vh;
 }
@@ -16,8 +16,8 @@ body{
 }
 
 #entry{
-  width: fit-content;
-  height: fit-content;
+  width: 375px;
+  height: 211px;
   background-color: gray;
   padding: 5%;
 }
