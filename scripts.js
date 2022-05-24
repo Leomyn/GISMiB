@@ -16,17 +16,19 @@ image_input.addEventListener("change", function() {
     });
     // eslint-disable-next-line no-invalid-this
     reader.readAsDataURL(this.files[0]);
-    console.log(image_input.value);
+    // console.log(image_input.value);
 });
 
 upload_input.addEventListener("click", function createEntry() {
     entry = document.createElement("img");
-    desc = document.createElement("p");
     entry.style.backgroundImage = image;
     entry.classList.add("image-element");
-    desc.classList.add("entry");
+    desc = document.createElement("div");
+    desc.classList.add("description");
     document.getElementById("entry").appendChild(entry);
-    desc = document.getElementById("description_input").appendChild(desc);
+    document.getElementById("description_input").appendChild(desc);
+    console.log(desc);
+    console.log(entry);
     return;
 });
 
